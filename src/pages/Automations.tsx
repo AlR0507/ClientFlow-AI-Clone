@@ -9,6 +9,7 @@ import {
   Clock,
   Calendar,
   Plus,
+  Play,
   Pause,
   Loader2,
   Sparkles,
@@ -20,6 +21,7 @@ import { cn } from "@/lib/utils";
 import { CreateAutomationDialog } from "@/components/dialogs/CreateAutomationDialog";
 import { AISummaryDialog } from "@/components/dialogs/AISummaryDialog";
 import { useAutomations, useUpdateAutomation, useDeleteAutomation } from "@/hooks/useAutomations";
+import { useExecuteAutomation } from "@/hooks/useExecuteAutomation";
 import { useLatestAutomationRun } from "@/hooks/useAutomationRuns";
 import { useClients } from "@/hooks/useClients";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -428,3 +430,4 @@ export default function Automations() {
     </div>
   );
 }
+
